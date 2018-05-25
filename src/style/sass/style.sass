@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+
+
+
+
+
+@font-face
+  font-family: 'Delhi'
+  src: url('../webfonts/Delhi.ttf.woff') format("woff"), url('../webfonts/Delhi.ttf.eot') format("eot")
+
+img
+  user-select: none
+  user-drag: none
+
+body
+  user-select: none
+  margin: 0
+  font-family: 'Raleway', serif
+  font-weight: lighter
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: #FFF
+  background: linear-gradient(to bottom, #000 20%,  #000 35%, #040905 70%)
+
+a
+  color: #FFF
+  text-decoration: none
+  transition: 0.25s
+  &:hover
+    transition: 0.3s
+    color: #97e6c5
+    cursor: pointer
+
+.onepage
+  text-transform: uppercase
+  display: flex
+  flex-direction: column
+  background-image: url("../images/animated_rapture.gif")
+  background-repeat: no-repeat
+  background-size: 100%
+
+.top-menu
+  display: flex
+  flex-direction: row
+  margin-right: 0
+  margin-left: auto
+  ul
+    display: flex
+    flex-basis: auto
+    list-style-type: none
+  li
+    color: #FFF
+    text-decoration: none
+    transition: 0.25s
+    margin: 20px
+    &:hover
+      transition: 0.3s
+      margin-bottom: 2px
+      color: #97e6c5
+      cursor: pointer
+
+.scroll-top
+  list-style-type: none
+  display: block
+  position: fixed
+  bottom: 20px
+  right: 30px
+  z-index: 99
+
+.scroll-top-btn
+  color: #FFF
+  text-decoration: none
+  transition: 0.25s
+  margin: 20px
+  &:hover
+    transition: 0.3s
+    padding-top: 10px
+    border-top: 1px #97e6c5 solid
+    color: #97e6c5
+    cursor: pointer
+
+.nav-item
+  color: #FFF
+  text-decoration: none
+  transition: 0.25s
+  margin: 20px
+  &:hover
+    transition: 0.3s
+    padding-bottom: 10px
+    border-bottom: 1px #97e6c5 solid
+    color: #97e6c5
+    cursor: pointer
+
+.language
+  display: none
+  margin-top: 20px
+  margin-bottom: 0px
+
+.title
+  padding-top: 45vh
+  padding-bottom: 50vh
+  text-align: center
+  align-content: center
+  justify-content: center
+  h1, h2
+    font-weight: normal
+    color: #AD4F09
+    filter: drop-shadow(-2px 2px 0 #FFF)
+  h1
+    font-family: 'Delhi', 'Raleway', serif
+
+@media only screen and (max-width: 1005px)
+  .top-menu
+    display: none
+  .language
+    text-align: center
+    display: block
+  .onepage
+    margin: 0
+    width: 100%
+
+.box-shadow
+  transition: 0.2s
+  background: rgba(0, 0, 0, 0.5)
+  width: 50vw
+  margin-left: auto
+  margin-right: auto
+  padding: 10px
+  &:hover
+    transition: 0.3s
+    background: rgba(0, 0, 0, 0.7)
+
+.about-me
+  @extend .title
+  background-image: url("../images/monolythe-repeat.gif")
+  background-repeat: no-repeat
+
+.about
+  left: 0
+  right: 0
+  margin-left: auto
+  margin-right: auto
+  text-indent: 80px
+  text-align: justify
+  line-break: auto
+  width: 500px
+
+.quote
+  margin-top: 20%
+  margin-bottom: -30%!important
+  text-align: center
+  font-weight: normal
+
+.portfolio
+  @extend .title
+  display: block
+  justify-content: center
+  margin: auto
+  img
+    margin: 5px
+    position: relative
+    display: inline
+    z-index: 0
+    transition: 0.2s
+    margin-bottom: 30px
+    &:hover
+      transition: 0.3s
+      cursor: pointer
+  .description
+    display: inline
+    opacity: 0
+
+.matcha, .hypertube
+  transition: 0.2s
+
+.matcha:hover ~ .matcha
+  transition: 0.2s
+  margin-left: -100px
+  opacity: 1
+  -webkit-animation: matcha-fi 0.3s
+
+.hypertube:hover ~ .hypertube
+  align-content: right
+  justify-content: right
+  width: 650px
+  transition: 0.2s
+  margin-left: 150px
+  opacity: 1
+  -webkit-animation: hypertube-fi 0.3s
+  text-align: right!important
+
+.hvr-grow-shadow
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-property: box-shadow, transform
+  transition-property: box-shadow, transform
+  border: 1px solid #5b5b5b
+  &:hover
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
+    -webkit-transform: scale(1.1)
+    transform: scale(1.1)
+
+.contact
+  @extend .title
+
+@-webkit-keyframes fade-out
+  0%, 100%
+    margin-left: -55px
+    opacity: 0
+  75%
+    margin-left: 50px
+    opacity: 1
+
+@-webkit-keyframes hypertube-fi
+  from
+    margin-left: -55px
+    opacity: 0
+  to
+    margin-left: 150px
+    opacity: 1
+
+@-webkit-keyframes matcha-fi
+  from
+    margin-left: 50px
+    opacity: 0
+  to
+    margin-left: -100px
+    opacity: 1
+
+.copied
+  margin-left: -55px
+  -webkit-animation: fade-out 3s
+  opacity: 0
+
+.curriculum-vitae
+  @extend .title
+  background-image: url("../images/songbird.jpg")
+  background-repeat: no-repeat
+  background-size: auto
+
+.curriculum-vitae-a
+  transition: 0.2s
+  padding: 10px 20px 10px 20px
+  border: none
+  background: rgba(151, 230, 197, 0.2)
+  outline: none
+  color: #FFF
+  box-shadow: none
+  cursor: pointer
+  &:hover
+    border: none
+    transition: 0.3s
+    background: rgba(151, 230, 197, 0.9)
+    color: #000
+
+.columbia
+  font-family: 'Raleway', serif
+  font-weight: lighter
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-transform: uppercase
+  position: absolute
+  z-index: 5
+  top: 40%
+  right: 0
+  left: 0
+  margin-left: auto
+  margin-right: auto
+  text-align: center
+  a
+    margin-left: 0px
+
+.not-found
+  position: relative
+  overflow: hidden
+
+.gif
+  object-fit: cover
+  width: 100vw
+  height: 99vh
+
+@-webkit-keyframes blink-gif
+  0%, 100%
+    opacity: 1
+  50%
+    opacity: 0

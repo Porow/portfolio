@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.3.2",
+    "react-favicon": "0.0.14",
+    "react-i18next": "^7.6.1",
+    "react-image-lightbox": "^5.0.0",
+    "react-images": "^0.5.17",
+    "react-localize-redux": "^2.17.5",
+    "react-modal": "^3.4.4",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "react-scrollchor": "^5.0.2",
+    "react-translate": "^6.0.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "ruby-sass": "0.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
