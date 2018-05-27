@@ -29,8 +29,7 @@ a {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/animated_rapture.gif");
-  background-repeat: no-repeat;
+  background: url("../images/animated_rapture.gif") no-repeat;
   background-size: 100%; }
 
 .top-menu {
@@ -88,7 +87,7 @@ a {
 .language {
   display: none;
   margin-top: 20px;
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .title, .about-me, .portfolio, .contact, .curriculum-vitae {
   padding-top: 45vh;
@@ -126,8 +125,7 @@ a {
     background: rgba(0, 0, 0, 0.7); }
 
 .about-me {
-  background-image: url("../images/monolythe-repeat.gif");
-  background-repeat: no-repeat; }
+  background: url("../images/monolythe-repeat.gif") no-repeat; }
 
 .about {
   left: 0;
@@ -150,12 +148,11 @@ a {
   justify-content: center;
   margin: auto; }
   .portfolio img {
-    margin: 5px;
     position: relative;
     display: inline;
     z-index: 0;
     transition: 0.2s;
-    margin-bottom: 30px; }
+    margin: 5px 5px 30px; }
     .portfolio img:hover {
       transition: 0.3s;
       cursor: pointer; }
@@ -238,8 +235,7 @@ a {
   opacity: 0; }
 
 .curriculum-vitae {
-  background-image: url("../images/songbird.jpg");
-  background-repeat: no-repeat;
+  background: url("../images/songbird.jpg") no-repeat;
   background-size: auto; }
 
 .curriculum-vitae-a {
@@ -272,7 +268,7 @@ a {
   margin-right: auto;
   text-align: center; }
   .columbia a {
-    margin-left: 0px; }
+    margin-left: 0; }
 
 .not-found {
   position: relative;
