@@ -12,7 +12,7 @@ class NotFound extends Component {
     render() {
         return (
             <div className="not-found">
-                <img className="gif" src={require("../style/images/columbia.gif")}/>
+                <img alt="404 not found" className="gif" src={require("../style/images/columbia.gif")}/>
                 <div className="columbia">
                     <h1><Translate id="NotFound" /></h1>
                     <p><Translate id="NotFoundText" /></p>

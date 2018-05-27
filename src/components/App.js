@@ -119,10 +119,10 @@ class App extends Component {
           </div>
           <div id="portfolio" className="portfolio">
               <span className="matcha">
-                  <img id="matcha" onClick={() => this.setState({ matchaisOpen: true })} src={require('../style/images/folio/thumbnails/matcha.png')} width="250px" height="250px" className="hvr-grow-shadow"/>
+                  <img alt="Dating website" id="matcha" onClick={() => this.setState({ matchaisOpen: true })} src={require('../style/images/folio/thumbnails/matcha.png')} width="250px" height="250px" className="hvr-grow-shadow"/>
               </span>
               <span className="hypertube">
-                <img id="hypertube" onClick={() => this.setState({ hypertubeisOpen: true })} src={require('../style/images/folio/thumbnails/hypertube.jpg')} width="250px" height="250px" className="hvr-grow-shadow"/>
+                <img alt="Streaming website" id="hypertube" onClick={() => this.setState({ hypertubeisOpen: true })} src={require('../style/images/folio/thumbnails/hypertube.jpg')} width="250px" height="250px" className="hvr-grow-shadow"/>
                 <br/>
               </span>
               <p className="matcha description"><Translate id="matcha" /></p>
@@ -132,20 +132,20 @@ class App extends Component {
                   <span><Translate id="contactme" /></span>
                   <CopyToClipboard className="contact" text="charles.antoine.alba@gmail.com"
                                    onCopy={() => this.setState({copiedmail: true, copiedtel: false})}>
-                      <a title="Copy mail"><Translate id="mail" /></a>
+                      <a title="Copy mail" className="contact" ><Translate id="mail" /></a>
                   </CopyToClipboard>
                   {this.state.copiedmail ? <span className="copied" style={{color: '#97e6c5'}}><Translate id="copied" /></span> : null}
               <br/><br/>
               <span><Translate id="or" /></span>
               <CopyToClipboard text="+33 6 29 19 33 43"
                                onCopy={() => this.setState({copiedtel: true, copiedmail: false})}>
-                  <a title="Copy number"> <Translate id="phone" /></a>
+                  <a title="Copy number" className="contact" > <Translate id="phone" /></a>
               </CopyToClipboard>
               {this.state.copiedtel ? <span className="copied" style={{color: '#97e6c5'}}><Translate id="copied" /></span> : null}
           </div>
           <div id="curriculum-vitae" className="curriculum-vitae">
-              <a href='/alba_resume.pdf' target='_blank'>
-                  <a className="curriculum-vitae-a"><Translate id="seeresume" /></a>
+              <a href='/alba_resume.pdf' target='_blank' className="curriculum-vitae-a">
+                 <Translate id="seeresume" />
               </a>
               <p className="quote">
                   <Translate id="quote" />
